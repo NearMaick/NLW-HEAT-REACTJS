@@ -51,8 +51,8 @@ export function MessageList() {
       <img src={logoImg} alt="DoWhile2021" />
 
       <ul className={styles.messageList}>
-        {messages.map(message => (
-          <li key={message.id} className={styles.message}>
+        {messages.map((message, index) => (
+          <li key={index} className={styles.message}>
             <p className={styles.messageContent}>
               {message.text}
             </p>
